@@ -16,14 +16,17 @@ test('it shows two inputs and a button', () => {
 
 test('it calls onUserAdd when the form is submitted', async  () => {
 
-  const argList = []
-  const callback = (...args) => {
-    argList.push(args)
-  }
+  const mock = vi.fn()
 
-  render(<UserForm onUserAdd={callback}/>)
+  render(<UserForm onUserAdd={mock}/>)
 
-  const [nameInput, emailInput] = screen.getAllByRole('textbox')
+  const nameInput = screen.getByRole('textbox', {
+    name: /name/i
+  })
+
+  const emailInput = screen.getByRole('textbox', {
+    name: /email/i
+  })
 
   await user.click(nameInput)
   await user.keyboard('Lysia')
@@ -35,6 +38,6 @@ test('it calls onUserAdd when the form is submitted', async  () => {
 
   await user.click(button)
 
-  expect(argList).toHaveLength(1)
-  expect(argList[0][0]).toEqual({ name: 'Lysia', email : 'lysialeao@gmail.com'})
+  expect(mock).toHaveBeenCalled()
+  expect(mock).toHaveBeenCalledWith({ name: 'Lysia', email: 'lysialeao@gmail.com'})
 })
