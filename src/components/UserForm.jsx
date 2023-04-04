@@ -1,12 +1,19 @@
 import React, { useState } from "react"
 
 const UserForm = ({ onUserAdd }) => {
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+
   const handleSubmit = (event) => {
     event.preventDefault()
+
     onUserAdd({ name, email})
+
+    setName('')
+    setEmail('')
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <div>
