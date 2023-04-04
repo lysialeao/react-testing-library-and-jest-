@@ -28,16 +28,20 @@ test('it calls onUserAdd when the form is submitted', async  () => {
     name: /email/i
   })
 
-  await user.click(nameInput)
-  await user.keyboard('Lysia')
-
-  await user.click(emailInput)
-  await user.keyboard('lysialeao@gmail.com')
-
   const button = screen.getByRole('button')
 
-  await user.click(button)
+  Promise.all([
+    user.click(nameInput),
+    user.keyboard('Lysia'),
 
-  expect(mock).toHaveBeenCalled()
-  expect(mock).toHaveBeenCalledWith({ name: 'Lysia', email: 'lysialeao@gmail.com'})
+    user.click(emailInput),
+    user.keyboard('lysialeao@gmail.com'),
+
+    user.click(button),
+  ]).then(() => {
+    expect(mock).toHaveBeenCalled()
+    expect(mock).toHaveBeenCalledWith({ name: 'Lysia', email: 'lysialeao@gmail.com'})
+  })
+
+
 })
