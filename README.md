@@ -50,4 +50,4 @@ Este projeto depende das seguintes bibliotecas:
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Para mais informações, consulte o arquivo LICENSE.md.
+Este projeto está licenciado sob a licença MIT.
