@@ -24,8 +24,6 @@ To use this project, you will need to clone this repository and install its depe
 To use this project, simply run the appropriate commands using the npm package manager. Below are some of the most important commands listed:
 
 - `npm run test`: Runs all application tests using Jest.
-- `npm run test:watch`: Runs tests in watch mode, allowing tests to be automatically re-executed whenever the code is changed.
-- `npm run test:coverage`: Runs tests and generates a code coverage report.
 - `npm run role-notes`: Open a new tab with a document full of notes and examples on how to use the ByRole query with accessible names.
 
 ## Features
