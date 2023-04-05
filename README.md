@@ -1,53 +1,53 @@
 # testing-library-and-jest
 
-Este projeto foi criado para documentar as notas e aprendizados sobre testes em JavaScript, utilizando o framework Jest em conjunto com a biblioteca Testing Library e o framework React.
+This project was created to document notes and learnings about testing in JavaScript, using the Jest framework in conjunction with the Testing Library library and the React framework.
 
-## Instalação
+## Installation
 
-Para utilizar este projeto, você precisará clonar este repositório e instalar suas dependências. Para fazer isso, siga os seguintes passos:
+To use this project, you will need to clone this repository and install its dependencies. To do so, follow the steps below:
 
-1. Clone este repositório em sua máquina local:
+1. Clone this repository to your local machine:
 
 `` git clone https://github.com/lysialeao/testing-library-and-jest ``
 
-2. Navegue para o diretório do projeto:
+2. Navigate to the project directory:
 
 `` cd testing-library-and-jest ``
 
-3. Instale as dependências utilizando o gerenciador de pacotes npm:
+3. Install the dependencies using the npm package manager:
 
 `` npm install ``
 
 
-## Utilização
+## Usage
 
-Para utilizar este projeto, basta executar os comandos apropriados utilizando o gerenciador de pacotes npm. A seguir, são listados alguns dos comandos mais importantes:
+To use this project, simply run the appropriate commands using the npm package manager. Below are some of the most important commands listed:
 
-- `npm run test`: Executa todos os testes da aplicação utilizando o Jest.
-- `npm run test:watch`: Executa os testes em modo de observação (watch mode), permitindo que os testes sejam reexecutados automaticamente sempre que o código for alterado.
-- `npm run test:coverage`: Executa os testes e gera um relatório de cobertura de código.
+- `npm run test`: Runs all application tests using Jest.
+- `npm run test:watch`: Runs tests in watch mode, allowing tests to be automatically re-executed whenever the code is changed.
+- `npm run test:coverage`: Runs tests and generates a code coverage report.
 
-## Funcionalidades
+## Features
 
-Este projeto inclui exemplos e notas sobre testes em JavaScript, utilizando o Jest em conjunto com a biblioteca Testing Library e o framework React. Alguns dos tópicos abordados incluem:
+This project includes examples and notes on testing in JavaScript, using Jest in conjunction with the Testing Library library and the React framework. Some of the topics covered include:
 
-- Testes unitários e testes de integração.
-- Testes de componentes React utilizando a Testing Library.
-- Testes de requisições assíncronas utilizando a função `async/await` do JavaScript.
+- Unit tests and integration tests.
+- React component testing using the Testing Library.
+- Asynchronous request testing using JavaScript's `async/await` function.
 
-## Contribuição
+## Contribution
 
-Este projeto está aberto para contribuições da comunidade. Se você quiser contribuir, sinta-se à vontade para abrir uma issue ou um pull request
+This project is open for community contributions. If you want to contribute, feel free to open an issue or pull request.
 
-## Dependências
+## Dependencies
 
-Este projeto depende das seguintes bibliotecas:
+This project depends on the following libraries:
 
 - Jest
 - Testing Library
 - React
 - React-DOM
 
-## Licença
+## License
 
-Este projeto está licenciado sob a licença MIT.
+This project is licensed under the MIT License.
