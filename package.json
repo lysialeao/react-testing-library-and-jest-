@@ -9,7 +9,8 @@
     "test": "vitest",
     "preview": "vite preview",
     "role-notes": "npx rtl-book serve roles-notes.js",
-    "query-notes": "npx rtl-book serve query-notes.js"
+    "query-notes": "npx rtl-book serve query-notes.js",
+    "criteria-notes": "npx rtl-book serve criteria-notes.js"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
